@@ -1,20 +1,4 @@
-<?php
-/**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme and one of the
- * two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * For example, it puts together the home page when no home.php file exists.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
- */
-
-get_header(); ?>
+<?php include('header-home.php'); ?>
 
 	<div id="primary" class="content-area">
 
@@ -44,5 +28,46 @@ get_header(); ?>
 		
 	</div><!-- #primary -->
 <?php get_sidebar(); ?>
+
+	<div class="statistics_home">
+
+		<div class="stat_content">
+
+		<h2>Week of <?php 
+
+			echo date('F j, Y') ;
+
+			?>
+			</h2>
+
+			<div class="stat">
+				<a href="" class="stat_link_big">12 Desktop support positions posted in Greater Milwaukee.</a> 
+				<p class="stat_link"><a href="" class="stat_link">Find Desktop Support Jobs</a></p>
+				
+			</div>
+
+
+			<div class="stat">
+				<a href="" class="stat_link_big">6 jobs require MCPs.</a>
+				<p class="stat_link"><a href="" class="stat_link_small">Learn About Certifications</a></p>
+			</div>
+
+			
+			<div class="stat">
+				<a href="" class="stat_link_big">5 positions listed in Milwaukee County, 10 in Waukesha.</a>
+				<p class="stat_link"><a href="" class="stat_link_small">Search Jobs in the Milwaukee Area</a></p>
+				
+			</div>
+
+
+			<div class="stat">
+				<a href="" class="stat_link_big">25 jobs listing salaries of at least $50,000.</a>
+				<p class="stat_link"><a href="" class="stat_link_small">Click Here to Read About Salary Ranges</a></p>
+				
+			</div>
+
+		</div>
+
+	</div>
 
 <?php get_footer(); ?>
