@@ -37,7 +37,9 @@
 			
 			<div id="banner">
 				<div id="logo"></div>
-				<div class="join button"></div>
+				<div class="join button">
+					<h4>Join the Tech Edge</h4>
+				</div>
 
 			</div>
 
@@ -51,4 +53,11 @@
 			</div><!-- #navbar -->
 		</header><!-- #masthead -->
 
-		<div id="main" class="site-main">
+<?php 
+	if ( is_front_page() ) {
+    echo '<div id="main" class="site-home">';
+} else {
+   echo '<div id="main" class="site-main">';
+}
+ ?>
+		

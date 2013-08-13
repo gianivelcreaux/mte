@@ -179,6 +179,8 @@ h6 {
 }
 
 address {
+	font-size: 1.2em;
+	font-weight: 300;
 	font-style: italic;
 	margin: 0 0 24px;
 }
@@ -820,8 +822,14 @@ img.wp-smiley,
 	height: 120px;
 }
 
+.join h4 {
+	font-size: 16px;
+	margin: 26px auto;
+	float: none;
+}	
 
 .join {
+	text-align: center;
 	float: right;
 	width: 175px;
 	height: 75px;
@@ -841,7 +849,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdc93f', end
 }
 
 .button {
-
+	color: #fff;
+	text-shadow: 0px 0px 3px #000;
 }
 
 
@@ -920,7 +929,7 @@ div.nav-menu > ul {
 
 .nav-menu li:hover > a,
 .nav-menu li a:hover {
-	background-color: #220e10;
+	background-color: #666; 
 	color: #fff;
 }
 
@@ -1032,7 +1041,7 @@ ul.nav-menu li:hover > ul,
 .column {
 width: 220px;
 float: left;
-
+padding-bottom: 35px;
 font-size: .9em;
 }
 
@@ -1108,6 +1117,10 @@ a:active.stat_link_big {
 	margin: 0 auto;
 	max-width: 1000px; /* 604px */
 	width: 100%;
+}
+
+.entry-header_2 {
+	margin-bottom: 40px;
 }
 
 .sidebar .entry-header,
@@ -1978,7 +1991,7 @@ footer.entry-meta {
 }
 
 .paging-navigation {
-	background-color: #e8e5ce;
+	background-color: #e8e5ce ; 
 	padding: 40px 0;
 }
 
@@ -2599,7 +2612,7 @@ font-size: 23px;
 background-color: #F8D050;
 width: 270px;
 color: #fff;
-text-shadow: #2E2A21 1px 1px 0px;
+text-shadow: #2E2A21 0px 0px 3px;
 margin: -20px 0 0 -20px;
 text-align: center;
 padding: 12px 7px;
@@ -2666,7 +2679,7 @@ text-transform: uppercase;
  * ----------------------------------------------------------------------------
  */
 
-footer {
+.footer_home {
 	background-color: rgba(224, 224, 219, 0.7);
 }
 

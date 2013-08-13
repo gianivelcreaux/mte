@@ -1,4 +1,8 @@
 <?php
+/*
+Template Name: Blog Template
+*/
+
 get_header(); ?>
 
 

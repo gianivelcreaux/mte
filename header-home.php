@@ -37,7 +37,7 @@
 			
 			<div id="banner">
 				<div id="logo"></div>
-				<div class="join button"></div>
+				<div class="join button"><h3 class="">Join the Tech Edge</h3></div>
 
 			</div>
 
