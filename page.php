@@ -21,11 +21,8 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				
-					<div class="entry-content">
-						
-						<header class="entry-header">
-						
+				<header class="entry-header">
+						<h1 class="entry-title"><?php the_title(); ?></h1>
 							<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 						<div class="entry-thumbnail">
 							<?php the_post_thumbnail(1000, 313); ?>
@@ -33,7 +30,10 @@ get_header(); ?>
 						<?php endif; ?>
 						
 					</header><!-- .entry-header -->
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					
+					<div class="entry-content">
+						
+						
 						<?php the_content(); ?>
 
 
